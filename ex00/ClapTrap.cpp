@@ -6,15 +6,12 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/20 06:20:53 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/20 06:24:00 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <iostream>
-#include <chrono>
-#include <thread>
-#include <cmath>
 
 int ClapTrap::_instanceNum = 0;
 
