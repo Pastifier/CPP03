@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/20 06:24:00 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/20 06:29:11 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,11 @@ void ClapTrap::attack(const std::string& target) {
 
 void ClapTrap::takeDamage(unsigned int amount) {
 	static unsigned short idx;
+	if (_hitPoints <= 0) {
+		_hitPoints = 0;
+		std::cout << _name << "'s mother: " << _name << " is already deeaaaaaad! * cries profusely *" << std::endl;
+		return ;
+	}
 
 	const char* messages[3] = {
 		" dies due to a concussion",
@@ -95,11 +100,6 @@ void ClapTrap::takeDamage(unsigned int amount) {
 
 	std::cout << "[SYSTEM] " << _name << " is receiving a hit!" << std::endl;
 
-	if (_hitPoints <= 0) {
-		_hitPoints = 0;
-		std::cout << _name << "'s mother: " << _name << " is already deeaaaaaad! * cries profusely *" << std::endl;
-		return ;
-	}
 	_hitPoints -= amount;
 	if (_hitPoints <= 0) {
 		std::cout << "[SYSTEM] " << _name << messages[idx++ % 3] << std::endl;
@@ -123,4 +123,5 @@ void ClapTrap::beRepaired(unsigned int amount) {
 		std::cout << _name << "'s mother: NOOOOOO!!!! MY BABY!!!! D':>" << std::endl;
 		return ;
 	}
+	std::cout << "[SYSTEM] " << _name << " got healed for " << amount << " points!" << std::endl;
 }
