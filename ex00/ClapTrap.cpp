@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/20 06:29:11 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/21 12:50:13 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ ClapTrap::ClapTrap(ClapTrap const& other) :
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
 	if (this != &other) {
+		_name = other._name;
 		_hitPoints = other._hitPoints;
 		_energyPoints = other._energyPoints;
 		_atkDMG = other._atkDMG;
@@ -65,6 +66,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
 }
 
 ClapTrap::~ClapTrap() {
+	std::cout << _name << " destroyed" << std::endl;
 	if (_instanceNum == 1) {
 		std::cout << "[SYSTEM] no one respects me around here -_-" << std::endl;
 	}
