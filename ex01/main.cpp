@@ -14,25 +14,49 @@
 #include <iostream>
 
 int main() {
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+
 	ScavTrap one("Nice");
-	one.attack("some random ass name");
-	std::cout << "----------------------------------------------------" << std::endl;
+	one.attack("some random name");
+	ScavTrap Four;
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+	
 	ScavTrap two = one;
-	std::cout << "----------------------------------------------------" << std::endl;
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
 
 	ScavTrap three("Jackson");
 	three = one;
 
-	three.attack("Emran");
-	ScavTrap Four;
+DEBUG_PRINT("----------------------- SECTION -----------------------");
 
+	DEBUG_PRINT(one.getName() << ": " << one.getHitPoints());
+	DEBUG_PRINT(one.getName() << ": " << one.getEnergyPoints());
+	DEBUG_PRINT(one.getName() << ": " << one.getAtkDmg());
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+
+	three.attack("Emran");
 	Four.attack("Falafel");
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+
 	for (int i = 0; i < 24; i++)
 		Four.takeDamage(4);
 
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+
 	for (int i = 0; i < 24; i++)
 		Four.beRepaired(1);
+
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+	
 	Four.guardGate();
+	
+DEBUG_PRINT("----------------------- SECTION -----------------------");
+
 	return 0;
 }
 
