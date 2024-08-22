@@ -32,10 +32,10 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 
-	const std::string& getName();
-	int getHitPoints();
-	int getEnergyPoints();
-	int getAtkDmg();
+	const std::string& getName() const;
+	int getHitPoints() const;
+	int getEnergyPoints() const;
+	int getAtkDmg() const;
 private:
 	std::string _name;
 	int _hitPoints;

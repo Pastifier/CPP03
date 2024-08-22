@@ -136,18 +136,18 @@ void ClapTrap::beRepaired(unsigned int amount) {
 	DEBUG_PRINT("[SYSTEM] " << _name << " got healed for " << amount << " points!");
 }
 
-const std::string& ClapTrap::getName() {
+const std::string& ClapTrap::getName() const {
 	return _name;
 }
 
-int ClapTrap::getHitPoints() {
+int ClapTrap::getHitPoints() const {
 	return _hitPoints;
 }
 
-int ClapTrap::getEnergyPoints() {
+int ClapTrap::getEnergyPoints() const {
 	return _energyPoints;
 }
 
-int ClapTrap::getAtkDmg() {
+int ClapTrap::getAtkDmg() const {
 	return _atkDMG;
 }
