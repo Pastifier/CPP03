@@ -2,7 +2,7 @@
 NAME := clapTrap
 
 # Necessities
-CXX := c++
+CXX := g++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 
 # Targets

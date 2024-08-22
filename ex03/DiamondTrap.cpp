@@ -15,7 +15,7 @@
 #include <iostream>
 
 
-DiamondTrap::DiamondTrap() : FragTrap(), ScavTrap(),
+DiamondTrap::DiamondTrap() : ClapTrap(), FragTrap(), ScavTrap(),
 _name("<BLANK>"),
 _clapTrapName(FragTrap::getClapName() += "_clap_name")
 {
@@ -23,7 +23,7 @@ _clapTrapName(FragTrap::getClapName() += "_clap_name")
 	DEBUG_PRINT(_name << " DiamondTrap default constructor called");
 }
 
-DiamondTrap::DiamondTrap(const std::string& name) : FragTrap(), ScavTrap(),
+DiamondTrap::DiamondTrap(const std::string& name) : ClapTrap(name), FragTrap(), ScavTrap(),
 _name(name),
 _clapTrapName(FragTrap::getClapName() += "_clap_name")
 {
@@ -34,7 +34,7 @@ _clapTrapName(FragTrap::getClapName() += "_clap_name")
 	DEBUG_PRINT(_name << " DiamondTrap string-param constructor called");
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& other) : FragTrap(), ScavTrap(),
+DiamondTrap::DiamondTrap(const DiamondTrap& other) : ClapTrap(), FragTrap(), ScavTrap(),
 _name(other.getName()),
 _clapTrapName(FragTrap::getClapName() += "_clap_name")
 {
