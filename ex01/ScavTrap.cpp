@@ -71,10 +71,6 @@ void ScavTrap::setEnergyPoints(int value) {
 	_energyPoints = value;
 }
 
-void ScavTrap::setAtkDmg(int value) {
-	_atkDMG = value;
-}
-
 const std::string& ScavTrap::getName() const {
 	return _name;
 }

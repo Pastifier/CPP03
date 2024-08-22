@@ -32,6 +32,5 @@ public:
 	int getAtkDmg() const;
 
 	void setEnergyPoints(int value);
-	void setAtkDmg(int value);
 private:
 };
