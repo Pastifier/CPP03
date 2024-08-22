@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:31:59 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 16:47:47 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 09:35:53 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ public:
 	FragTrap& operator=(const FragTrap& rhs);
 	~FragTrap();
 
-	virtual void attack(const std::string& target);
-	unsigned int getAtkDmg();
-	void highFivesGuys();
+	void attack(const std::string& target);
+	void highFivesGuys() const;
+
+	void setHitPoints(int value);
+	void setAtkDmg(int value);
 private:
 };

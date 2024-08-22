@@ -14,18 +14,32 @@
 #include <iostream>
 
 int main(void) {
-std::cout << "---------------- SECTION ----------------" << std::endl;
+DEBUG_PRINT("---------------- SECTION ----------------");
+
 	FragTrap blank;
-std::cout << "---------------- SECTION ----------------" << std::endl;
+
+DEBUG_PRINT("---------------- SECTION ----------------");
+
 	FragTrap first("First");
-std::cout << "---------------- SECTION ----------------" << std::endl;
+
+DEBUG_PRINT("---------------- SECTION ----------------");
+
 	FragTrap imposterFirst = first;
-std::cout << "---------------- SECTION ----------------" << std::endl;
+	FragTrap otherImposterFirst(imposterFirst);
+
+DEBUG_PRINT("---------------- SECTION ----------------");
 
 	blank.attack("First");
 	first.takeDamage(blank.getAtkDmg());
 
-std::cout << "---------------- SECTION ----------------" << std::endl;
+DEBUG_PRINT("---------------- SECTION ----------------");
+
+	DEBUG_PRINT(blank.getName() << ": " << blank.getHitPoints());
+	DEBUG_PRINT(blank.getName() << ": " << blank.getEnergyPoints());
+	DEBUG_PRINT(blank.getName() << ": " << blank.getAtkDmg());
+
+DEBUG_PRINT("---------------- SECTION ----------------");
+
 	return 0;
 }
 
