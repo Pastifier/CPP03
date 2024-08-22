@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 17:02:16 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/22 09:43:37 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 20:26:58 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ DiamondTrap::DiamondTrap(const std::string& name) :	ClapTrap(name),
 	DEBUG_PRINT(_name << " DiamondTrap string-param constructor called");
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& other) :	ClapTrap(),
+DiamondTrap::DiamondTrap(const DiamondTrap& other) :	ClapTrap(other.DiamondTrap::_name),
 														FragTrap(),
 														ScavTrap(),
-														_name(other.getName()),
+														_name(other.DiamondTrap::_name),
 														_clapTrapName(ClapTrap::_name += "_clap_name")
 {
 	FragTrap::setAtkDmg(30);
@@ -70,7 +70,7 @@ void DiamondTrap::attack(const std::string& target) {
 }
 
 void DiamondTrap::whoAmI() {
-	DEBUG_PRINT("I am "<< _name << "!");
-	DEBUG_PRINT("Wait. Actually, No! I am " << _clapTrapName << "!");
+	DEBUG_PRINT("I am "<< DiamondTrap::_name << "!");
+	DEBUG_PRINT("Wait. Actually, No! I am " << ClapTrap::_name << "!");
 }
 
