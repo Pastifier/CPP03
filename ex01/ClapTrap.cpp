@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 13:25:50 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 05:19:13 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,4 +105,20 @@ void ClapTrap::beRepaired(unsigned int amount) {
 		return ;
 	}
 	std::cout << "[SYSTEM] " << _name << " got healed for " << amount << " points!" << std::endl;
+}
+
+const std::string& ClapTrap::getName() const {
+	return _name;
+}
+
+int ClapTrap::getAtkDmg() const {
+	return _atkDMG;
+}
+
+int ClapTrap::getEnergyPoints() const {
+	return _energyPoints;
+}
+
+int ClapTrap::getHitPoints() const {
+	return _hitPoints;
 }

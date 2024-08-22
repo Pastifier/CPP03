@@ -6,11 +6,13 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:31:59 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 16:05:00 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/21 16:47:47 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#pragma once
+
+# include "ClapTrap.hpp"
 
 class FragTrap : public ClapTrap
 {

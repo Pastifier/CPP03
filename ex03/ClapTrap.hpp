@@ -6,11 +6,13 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:30:21 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 12:55:05 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 08:19:38 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#pragma once
+
+# include <string>
 
 class ClapTrap
 {
@@ -22,8 +24,9 @@ public:
 	~ClapTrap();
 
 	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	void takeDamage(  int amount);
+	void beRepaired(  int amount);
+	
 protected:
 	std::string _name;
 	int _hitPoints;

@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:41:22 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 16:06:51 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 09:36:07 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,30 @@ void FragTrap::attack(const std::string& target) {
 	std::cout << std::endl;
 }
 
-unsigned int FragTrap::getAtkDmg() {
+  int FragTrap::getAtkDmg() const {
 	return _atkDMG;
 }
 
-void FragTrap::highFivesGuys() {
+void FragTrap::highFivesGuys() const {
 	std::cout << _name << ": Gimme five, frembo!" << std::endl;
+}
+
+int FragTrap::getHitPoints() const {
+	return _hitPoints;
+}
+
+void FragTrap::setHitPoints(int value) {
+	_hitPoints = value;
+}
+
+void FragTrap::setAtkDmg(  int value) {
+	_atkDMG = value;
+}
+
+std::string &FragTrap::getClapName() {
+	return ClapTrap::_name;
+}
+
+const std::string &FragTrap::getClapName() const {
+	return ClapTrap::_name;
 }

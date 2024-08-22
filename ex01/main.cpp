@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 06:01:26 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 15:02:14 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 09:09:27 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int main() {
 
 	for (int i = 0; i < 24; i++)
 		Four.beRepaired(1);
+	Four.guardGate();
 	return 0;
 }
 

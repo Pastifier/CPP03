@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 16:19:56 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 06:28:29 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,8 +64,8 @@ void ClapTrap::attack(const std::string& target) {
 	std::cout << std::endl;
 }
 
-void ClapTrap::takeDamage(unsigned int amount) {
-	static unsigned short idx;
+void ClapTrap::takeDamage(  int amount) {
+	static   short idx;
 	if (_hitPoints <= 0) {
 		_hitPoints = 0;
 		std::cout << _name << "'s mother: " << _name << " is already deeaaaaaad! * cries profusely *" << std::endl;
@@ -87,7 +87,7 @@ void ClapTrap::takeDamage(unsigned int amount) {
 	}
 }
 
-void ClapTrap::beRepaired(unsigned int amount) {
+void ClapTrap::beRepaired(  int amount) {
 	std::cout << "[SYSTEM] " << _name << " is receiving a divine blessing!" << std::endl;
 
 	if (_hitPoints <= 0) {

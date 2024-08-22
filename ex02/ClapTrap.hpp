@@ -6,11 +6,13 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:30:21 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 12:55:05 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/21 16:47:35 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#pragma once
+
+# include <string>
 
 class ClapTrap
 {

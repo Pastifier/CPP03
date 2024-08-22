@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 10:21:07 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 13:43:20 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 05:11:56 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void ScavTrap::attack(const std::string& target) {
 
 	std::cout << _name << " attacks " << target << " for " << this->_atkDMG << " damage!";
 	if (_atkDMG < 0)
-		std::cout << "does that mean " << _name << " got healed " << target << "..?";
+		std::cout << " Does that mean " << _name << " got healed " << target << "..?";
 	std::cout << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 10:21:07 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 13:43:20 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 08:51:58 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,4 +63,16 @@ ScavTrap::~ScavTrap() {
 
 void ScavTrap::guardGate() {
 	std::cout << _name << " ScavTrap is now in Gate keeper mode!" << std::endl;
+}
+
+int ScavTrap::getEnergyPoints() const {
+	return _energyPoints;
+}
+
+void ScavTrap::setEnergyPoints(int value) {
+	_energyPoints = value;
+}
+
+void ScavTrap::setAtkDmg(int value) {
+	_atkDMG = value;
 }
