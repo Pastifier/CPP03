@@ -1,7 +1,7 @@
 #include <iostream>
 #include "DiamondTrap.hpp"
-//#include <cstring>
-//#include <cstdio>
+#include <cstring>
+#include <cstdio>
 
 int main(void) {
 	//char buffer[sizeof(DiamondTrap)];
@@ -37,14 +37,14 @@ DEBUG_PRINT("--------------------- SECTION ---------------------");
 	imposterFirst.attack("Emran");
 
 //DEBUG_PRINT("--------------------- SECTION ---------------------");
-	//memcpy(buffer, static_cast<void *>(&blank), sizeof(DiamondTrap));
-	//for (size_t i = 0; i < sizeof(DiamondTrap); i++) {
-	//	printf("%.2X", buffer[i]);
-	//}
-	//printf("\n------------------------------\n");
-	//for (size_t i = 0; i < sizeof(DiamondTrap); i++) {
-	//	printf("%c", buffer[i]);
-	//}
+//	memcpy(buffer, static_cast<void *>(&blank), sizeof(DiamondTrap));
+//	for (size_t i = 0; i < sizeof(DiamondTrap); i++) {
+//		printf("%.2X\n", buffer[i]);
+//	}
+//	printf("\n------------------------------\n");
+//	for (size_t i = 0; i < sizeof(DiamondTrap); i++) {
+//		printf("%c", buffer[i]);
+//	}
 
 DEBUG_PRINT("\n--------------------- SECTION ---------------------");
 

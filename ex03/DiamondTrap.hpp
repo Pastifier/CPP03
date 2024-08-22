@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 16:45:46 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/22 09:43:26 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:28:08 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 # include "FragTrap.hpp"
 # include "ScavTrap.hpp"
-
-# define DEBUG_PRINT(X) std::cout << X << std::endl
 
 class DiamondTrap : public FragTrap, public ScavTrap
 {
