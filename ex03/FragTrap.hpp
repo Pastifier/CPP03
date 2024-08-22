@@ -25,16 +25,8 @@ public:
 
 	void attack(const std::string& target);
 	void highFivesGuys() const;
-	
-	int getAtkDmg() const;
-	int getHitPoints() const;
-	
+
 	void setHitPoints(int value);
 	void setAtkDmg(int value);
-
-protected:
-	std::string &getClapName();
-	const std::string &getClapName() const;
-
 private:
 };

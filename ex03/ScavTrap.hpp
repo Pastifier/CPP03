@@ -25,8 +25,7 @@ public:
 
 	void attack(const std::string& target);
 	void guardGate();
-	
-	int getEnergyPoints() const;
+
 	void setEnergyPoints(int value);
 	void setAtkDmg(int value);
 private:

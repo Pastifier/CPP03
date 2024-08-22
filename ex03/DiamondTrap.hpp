@@ -26,16 +26,6 @@ public:
 	DiamondTrap& operator=(const DiamondTrap& other);
 	~DiamondTrap();
 
-	const std::string& getName() const;
-	int getHitPoints() const;
-	int getEnergyPoints() const;
-	int getAtkDmg() const;
-
-	void setName(const std::string& name);
-	void setHitPoints(int hp);
-	void setEnergyPoints(int ep);
-	void setAtkDmg(int ad);
-
 	void attack(const std::string& target);
 
 	void whoAmI();
