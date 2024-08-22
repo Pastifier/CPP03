@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:41:09 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 16:16:57 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/22 20:19:50 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,10 @@ DEBUG_PRINT("---------------- SECTION ----------------");
 	DEBUG_PRINT(blank.getName() << ": " << blank.getHitPoints());
 	DEBUG_PRINT(blank.getName() << ": " << blank.getEnergyPoints());
 	DEBUG_PRINT(blank.getName() << ": " << blank.getAtkDmg());
+
+DEBUG_PRINT("---------------- SECTION ----------------");
+
+	blank.highFivesGuys();
 
 DEBUG_PRINT("---------------- SECTION ----------------");
 
