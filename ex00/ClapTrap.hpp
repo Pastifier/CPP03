@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#pragma once
+
+# include <string>
+# include <iostream>
+
+# ifndef DEBUG_PRINT
+#  define DEBUG_PRINT(X) std::cout << X << std::endl
+# endif // !DEBUG_PRINT()
 
 class ClapTrap
 {
@@ -24,6 +31,11 @@ public:
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
+
+	const std::string& getName();
+	int getHitPoints();
+	int getEnergyPoints();
+	int getAtkDmg();
 private:
 	std::string _name;
 	int _hitPoints;
