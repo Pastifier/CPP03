@@ -70,19 +70,3 @@ void ScavTrap::guardGate() {
 void ScavTrap::setEnergyPoints(int value) {
 	_energyPoints = value;
 }
-
-const std::string& ScavTrap::getName() const {
-	return _name;
-}
-
-int ScavTrap::getHitPoints() const {
-	return _hitPoints;
-}
-
-int ScavTrap::getEnergyPoints() const {
-	return _energyPoints;
-}
-
-int ScavTrap::getAtkDmg() const {
-	return _atkDMG;
-}

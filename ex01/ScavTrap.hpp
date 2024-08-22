@@ -26,11 +26,6 @@ public:
 	void attack(const std::string& target);
 	void guardGate();
 
-	const std::string& getName() const;
-	int getHitPoints() const;
-	int getEnergyPoints() const;
-	int getAtkDmg() const;
-
 	void setEnergyPoints(int value);
 private:
 };
