@@ -36,6 +36,9 @@ public:
 	int getHitPoints() const;
 	int getEnergyPoints() const;
 	int getAtkDmg() const;
+// The fact that setters aren't here and defined selectively in later exercises isn't best-practice
+// at all, neither does it really make a difference. I just wanted to structure the code in a way
+// that makes it easier to explain the underlying concepts during an evaluation.
 private:
 	std::string _name;
 	int _hitPoints;
