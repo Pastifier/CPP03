@@ -50,6 +50,11 @@ DEBUG_PRINT("--------------------- SECTION ---------------------");
 
 DEBUG_PRINT("\n--------------------- SECTION ---------------------");
 
+	blank.highFivesGuys();
+	blank.guardGate();
+
+DEBUG_PRINT("\n--------------------- SECTION ---------------------");
+
 	return 0;
 }
 
