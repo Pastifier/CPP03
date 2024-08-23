@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 10:21:07 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/22 08:51:58 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/23 22:42:15 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void ScavTrap::attack(const std::string& target) {
 		DEBUG_PRINT("NOT ENOUGH MANA!!! D:>");
 		return ;
 	}
-
+	--_energyPoints;
 	DEBUG_PRINT(
 		_name << " attacks " << target << " for " << this->_atkDMG << " damage!";
 		if (_atkDMG < 0) {

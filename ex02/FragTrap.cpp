@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 15:41:22 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/22 09:36:07 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/23 22:43:25 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void FragTrap::attack(const std::string& target) {
 		return ;
 	}
 
+	--_energyPoints;
 	DEBUG_PRINT(_name << " attacks " << target << " for " << this->_atkDMG << " damage!";
 		if (_atkDMG < 0)
 			std::cout << "does that mean " << _name << " got healed " << target << "..?";

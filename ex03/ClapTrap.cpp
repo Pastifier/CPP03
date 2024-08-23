@@ -6,7 +6,7 @@
 /*   By: ebinjama <ebinjama@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 03:41:28 by ebinjama          #+#    #+#             */
-/*   Updated: 2024/08/21 12:50:13 by ebinjama         ###   ########.fr       */
+/*   Updated: 2024/08/23 22:40:11 by ebinjama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,7 @@ void ClapTrap::attack(const std::string& target) {
 		return ;
 	}
 
+	--_energyPoints;
 	std::cout << _name << " attacks " << target << " for " << _atkDMG << " damage!";
 	if (_atkDMG < 0)
 		std::cout << "does that mean " << _name << " got healed " << target << "..?";
@@ -119,6 +120,11 @@ void ClapTrap::takeDamage(unsigned int amount) {
 
 void ClapTrap::beRepaired(unsigned int amount) {
 	DEBUG_PRINT("[SYSTEM] " << _name << " is receiving a divine blessing!");
+	if (!_energyPoints) {
+		DEBUG_PRINT("\n NOT ENOUGH MANA!!! D:>");
+		return ;
+	}
+	--_energyPoints;
 
 	if (_hitPoints <= 0) {
 		_hitPoints = amount;
