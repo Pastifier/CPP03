@@ -61,8 +61,8 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& rhs) {
 	return *this;
 }
 
-DiamondTrap::~DiamondTrap()
-{
+DiamondTrap::~DiamondTrap() {
+	DEBUG_PRINT(DiamondTrap::_name << " DiamondTrap destructor called");
 }
 
 void DiamondTrap::attack(const std::string& target) {
